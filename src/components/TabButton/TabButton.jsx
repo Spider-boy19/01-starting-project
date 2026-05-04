@@ -1,12 +1,12 @@
 import './TabButton.css';
 
-export default function TabButton({children, onSelect}){
+export default function TabButton({children, isSelected, ...props}){
     function handleClick(){
-        console.loh('Hello World');
+        console.log('Hello World');
     }
     return(
         <li>
-            <button className = {isSelected ? 'active' : ''} onClick={onselect}>{children}</button>
+            <button className = {isSelected ? 'active' : ''} {...props}>{children}</button>
         </li>
     )
 }
