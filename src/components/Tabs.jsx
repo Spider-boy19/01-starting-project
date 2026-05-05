@@ -7,7 +7,7 @@ export default function Tabs({children, buttons, buttonsContainer="menu"}){
         <ButtonsContainer>
             {buttons}
         </ButtonsContainer>
-        {Children}
+        {children}
         </>
     )
 }
